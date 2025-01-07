@@ -20,8 +20,9 @@ public class StudentController {
     }
 
     @PostMapping("create_student")
-    public Student createStudent(@RequestBody Student student) {
-        return studentService.createStudent(student);
+    public String createStudent(@RequestBody Student student) {
+        studentService.createStudent(student);
+        return "Student created";
     }
 
     @GetMapping("/{email}")
@@ -30,7 +31,7 @@ public class StudentController {
     }
 
     @PostMapping("update_student")
-    public Student updateStudent(Student student) {
+    public Student updateStudent(@RequestBody Student student) {
         return studentService.updateStudent(student);
     }
 
