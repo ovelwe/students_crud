@@ -30,7 +30,7 @@ public class StudentController {
         return studentService.findByEmail(email);
     }
 
-    @PostMapping("update_student")
+    @PutMapping("update_student")
     public Student updateStudent(@RequestBody Student student) {
         return studentService.updateStudent(student);
     }
