@@ -1,8 +1,6 @@
 package ru.ovelwe.students_crud.controller;
 
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.ovelwe.students_crud.model.Student;
 import ru.ovelwe.students_crud.service.StudentService;
@@ -21,9 +19,9 @@ public class StudentController {
         return studentService.findAllStudents();
     }
 
-    @PostMapping("save_student")
-    public Student saveStudent(@RequestBody Student student) {
-        return studentService.saveStudent(student);
+    @PostMapping("create_student")
+    public Student createStudent(@RequestBody Student student) {
+        return studentService.createStudent(student);
     }
 
     @GetMapping("/{email}")

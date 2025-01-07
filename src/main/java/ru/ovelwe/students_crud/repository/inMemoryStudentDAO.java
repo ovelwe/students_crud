@@ -15,7 +15,7 @@ public class inMemoryStudentDAO {
         return STUDENTS;
     }
 
-    public Student saveStudent(Student student) {
+    public Student createStudent(Student student) {
         STUDENTS.add(student);
         return student;
     }

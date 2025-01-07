@@ -19,8 +19,8 @@ public class inMemoryStudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student saveStudent(Student student) {
-        return repository.saveStudent(student);
+    public Student createStudent(Student student) {
+        return repository.createStudent(student);
     }
 
     @Override

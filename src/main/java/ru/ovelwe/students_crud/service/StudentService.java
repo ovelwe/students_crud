@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public interface StudentService {
    List<Student> findAllStudents();
-   Student saveStudent(Student student);
+   Student createStudent(Student student);
    Student findByEmail(String email);
    Student updateStudent(Student student);
    void deleteStudent(String email);
