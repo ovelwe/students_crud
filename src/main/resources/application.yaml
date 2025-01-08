@@ -1,2 +1,16 @@
 spring:
   application.name: students_crud
+  datasource:
+    url: jdbc:postgresql://localhost:5432/students_crud
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
